@@ -9,6 +9,6 @@ RUN curl -L -o /tmp/xray.zip https://github.com/XTLS/Xray-core/releases/latest/d
 
 COPY config.json /etc/xray/config.json
 
-EXPOSE 8080
+EXPOSE 8000
 
 CMD ["/usr/local/bin/xray", "-config", "/etc/xray/config.json"]
